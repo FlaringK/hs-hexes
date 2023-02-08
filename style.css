@@ -14,13 +14,21 @@ body {
   margin: auto; 
 }
 
-#intro {
+#intro, #menu {
   margin: 10px auto;
   padding: 10px;
   width: max-content;
 
   border-radius: .5em;
   background-color: #62626262;
+}
+
+a {
+  font-weight: bold;
+}
+
+ul {
+  text-align: left;
 }
 
 #options {
@@ -60,6 +68,16 @@ h1 {
 
 h2 {
   width: 100%;
+  height: 75px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .5em;
+}
+
+h2:target {
+  border-bottom: solid black;
 }
 
 .copy {

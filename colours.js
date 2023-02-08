@@ -1,3 +1,49 @@
+const kids = {
+  june: "0715cd",
+  rose: "b536da",
+  dave: "e00707",
+  jade: "4ac925",
+
+  jane: "00d5f2",
+  jake: "1f9400",
+  roxy: "f141ef",
+  dirk: "f2a400",
+}
+
+const trolls = {
+
+  aradia: "a10000",
+  tavros: "a15000",
+  sollux: "a1a100",
+  karkat: "626262",
+  nepeta: "416600",
+  kanaya: "008141",
+  terezi: "008282",
+  vriska: "005682",
+  equius: "000056",
+  gamzee: "2b0057",
+  eridan: "6a006a",
+  feferi: "77003c",
+
+}
+
+const cherubs = {
+
+  calliope: "929292",
+  caliborn: "323232",
+
+  "felt / english": "2ed73a",
+
+  "itchy / stitch": "ffea00",
+  "doze / sawbuck": "4040fd",
+  "trace / matchsticks": "df0000",
+  "clover / eggs": "a357ff",
+  "fin / biscuits": "ff6000",
+  "die / quarters": "008140",
+  "crowbar / cans": "950015",
+
+}
+
 const charas = {
   june: "0715cd",
   rose: "b536da",
@@ -22,10 +68,15 @@ const charas = {
   eridan: "6a006a",
   feferi: "77003c",
   
-  "kankri / alt-calliope": "ff0000",
+  "alt-calliope": "ff0000",
   calliope: "929292",
   caliborn: "323232",
   english: "2ed73a",
+
+  jaspersprite: "f141ef",
+  epiloguejane: "0097d7",
+  joey: "71daff",
+  jude: "d3ff8f",
   
 }
 
@@ -75,16 +126,16 @@ const troll = {
 }
 
 const moons = {
-  prospitmain: "ffff01",
-  prospitside: "e49700",
-  dersemain: "ff01fe",
-  derseside: "9700e4"
+  "prospit symbol": "ffff01",
+  prospit: "e49700",
+  "derse symbol": "ff01fe",
+  derse: "9700e4"
 }
 
 const tezblood = {
 
   rust: "a10000",
-  broze: "a25203",
+  bronze: "a25203",
   gold: "a1a100",
   lime: "678900",
   olive: "336601",
@@ -98,17 +149,76 @@ const tezblood = {
 
 }
 
+const romance = {
+
+  flushed: "bf0000",
+  pale: "c39797",
+  ashen: "585858",
+  caliginous: "000000",
+
+}
+
+const hiveblood = {
+
+  rustAct1: "bb0000",
+  rust: "f42123",
+  bronzeAct1: "b25900",
+  bronze: "cd7f32",
+  gold: "abab1a",
+  olive: "71a020",
+  jade: "2caa6b",
+  teal: "26baba",
+  blue: "3796c6",
+  indigo: "6464ff",
+  purple: "a954ff",
+  violet: "791a79",
+  fuchsiaAct1: "6e003c",
+  fuchsia: "d121c1",
+
+}
+
+const sburb = {
+
+  beta: "4ce24e",
+  alpha: "ff0000",
+  sgrub: "900fff",
+
+}
+
+const epilogue = {
+
+  "epilogue karkat": "7c7e81",
+  "epilogue eridan": "7e0048",
+  "epilogue calliope": "a1a3a6",
+  "epilogue caliborn": "009c68",
+  "epilogue jane": "0097d7",
+  "harry anderson egbert": "0671cd",
+  "yiffy lalonde-harley": "D00009",
+  "tavros crocker": "2b0057",
+
+}
+
 // Actual code
 const col1 = document.getElementById("col1")
 const col2 = document.getElementById("col2")
 const notif = document.getElementById("notif")
 const hash = document.getElementById("hash")
+const menu = document.getElementById("toc")
 
 const addTitle = (title, id, col) => {
   const h2 = document.createElement("h2")
   h2.innerText = title
   h2.id = id
   col.append(h2)
+
+  const a = document.createElement("a")
+  a.innerText = title
+  a.href = "#" + id
+
+  const li = document.createElement("li")
+  
+  li.appendChild(a)
+  menu.append(li)
 }
 
 const copyColour = e => {
@@ -186,9 +296,29 @@ let addColorPairs = (title, id, col, colours) => {
 }
 
 // Add colours to character div
-addColours("Characters", "chara", col1, charas)
-addColorPairs("Aspects (From Sprites)", "aspect", col2, spriteaspects)
-addColorPairs("Aspects (From the Extended Zodiac)", "tezaspect", col2, tezaspects)
-addColours("Troll Anatomy", "troll", col2, troll)
-addColours("Moons (From the Extended Zodiac)", "moon", col2, moons)
-addColours("Signs (From the Extended Zodiac)", "tezblood", col1, tezblood)
+// addColours("Characters", "chara", col1, charas)
+// addColours("Troll Romance", "romance", col1, romance)
+// addColours("Troll Anatomy", "troll", col1, troll)
+
+// addColorPairs("Aspects (From Sprites)", "aspect", col2, spriteaspects)
+// addColorPairs("Aspects (From the Extended Zodiac)", "tezaspect", col2, tezaspects)
+// addColours("Moons (From the Extended Zodiac)", "moon", col2, moons)
+// addColours("Signs (From the Extended Zodiac)", "tezblood", col2, tezblood)
+
+addColours("Homestuck Kids", "kids", col1, kids)
+addColours("Homestuck Trolls", "trolls", col2, trolls)
+
+addColorPairs("Aspects (From Sprites)", "aspect", col1, spriteaspects)
+addColorPairs("Aspects (From the Extended Zodiac)", "tezaspect", col1, tezaspects)
+
+addColours("Blood (From the Extended Zodiac)", "tezblood", col2, tezblood)
+addColours("Blood (From Hiveswap)", "hiveblood", col2, hiveblood)
+
+addColours("Troll Anatomy", "troll", col1, troll)
+addColours("Troll Romance", "romance", col1, romance)
+
+addColours("Cherubs + The Felt", "cherubs", col2, cherubs)
+addColours("Moons (From the Extended Zodiac)", "moon", col1, moons)
+
+addColours("Sburb Versions", "sburb", col1, sburb)
+addColours("Epilogue & HS^2", "epilogue", col2, epilogue)
