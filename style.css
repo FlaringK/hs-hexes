@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "fontstuck";
+  src: url(https://file.garden/X1htvgJ0DEp_tp-Z/MSPFA%20other/Alchemy/fontstuck-extended.ttf);
+}
+
+body {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+
+  background: linear-gradient(180deg, rgba(141,170,214,1) 0%, rgba(107,114,212,1) 100%);
+}
+
+#main {
+  margin: auto; 
+}
+
+#intro {
+  margin: 10px auto;
+  padding: 10px;
+  width: max-content;
+
+  border-radius: .5em;
+  background-color: #62626262;
+}
+
+#options {
+  padding-top: 0.5em;
+}
+
+h1 {
+  font-family: "fontstuck";
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+}
+
+/* Colours */
+#colors {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+
+  max-width: max-content;
+  margin: auto;
+  padding: 10px;
+}
+
+#col1, #col2 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: calc((150px + 10px) * 4);
+  width: 50%;
+  gap: 10px;
+  justify-content: center;
+  align-content: flex-start;
+
+  font-weight: 600;
+  flex-grow: 1;
+}
+
+h2 {
+  width: 100%;
+}
+
+.copy {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  transition: transform .1s;
+
+  border-radius: .5em;
+}
+
+.copy .copy {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy:hover {
+  transform: scale(1.1);
+}
+
+
+.clickthrough {
+  pointer-events: none;
+}
+
+/* Notification */
+#notif {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+
+  font-size: 28px;
+  font-weight: 600;
+
+  padding: 5px 10px;
+  border-radius: .5em;
+  background-color: white;
+  opacity: 0;
+
+  transition: opacity 2s 2s;
+}
+
+#notif.show {
+  opacity: 1;
+  transition: none;
+}
