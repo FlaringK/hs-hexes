@@ -76,8 +76,8 @@ h2 {
 }
 
 .copy .copy {
-  width: 90px;
-  height: 90px;
+  width: 60%;
+  height: 60%;
   border-radius: 100%;
   
   display: flex;

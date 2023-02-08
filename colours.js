@@ -94,7 +94,7 @@ const tezblood = {
   indigo: "0021cb",
   purple: "440a7f",
   violet: "6a006a",
-  fushsia: "99004d",
+  fuchsia: "99004d",
 
 }
 
