@@ -81,6 +81,24 @@ const moons = {
   derseside: "9700e4"
 }
 
+const tezblood = {
+
+  rust: "a10000",
+  broze: "a25203",
+  gold: "a1a100",
+  lime: "678900",
+  olive: "336601",
+  jade: "078446",
+  teal: "008282",
+  blue: "004182",
+  indigo: "0021cb",
+  purple: "440a7f",
+  violet: "6a006a",
+  fushsia: "99004d",
+
+}
+
+// Actual code
 const col1 = document.getElementById("col1")
 const col2 = document.getElementById("col2")
 const notif = document.getElementById("notif")
@@ -172,4 +190,5 @@ addColours("Characters", "chara", col1, charas)
 addColorPairs("Aspects (From Sprites)", "aspect", col2, spriteaspects)
 addColorPairs("Aspects (From the Extended Zodiac)", "tezaspect", col2, tezaspects)
 addColours("Troll Anatomy", "troll", col2, troll)
-addColours("Moons (From the Extended Zodiac)", "moon", col1, moons)
+addColours("Moons (From the Extended Zodiac)", "moon", col2, moons)
+addColours("Signs (From the Extended Zodiac)", "tezblood", col1, tezblood)
