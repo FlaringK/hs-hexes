@@ -10,6 +10,19 @@ const kids = {
   dirk: "f2a400",
 }
 
+const shirtkids = {
+  june: "38F43D",
+  rose: "CB87F6",
+  dave: "FF0000",
+  jade: "53A3FF",
+
+  jane: "00D5F2",
+  jake: "1F9400",
+  roxy: "FF6FF2",
+  dirk: "ff7607",
+}
+
+
 const trolls = {
 
   aradia: "a10000",
@@ -322,3 +335,5 @@ addColours("Moons (From the Extended Zodiac)", "moon", col1, moons)
 
 addColours("Sburb Versions", "sburb", col1, sburb)
 addColours("Epilogue & HS^2", "epilogue", col2, epilogue)
+
+addColours("Shirt Symbols", "skids", col1, shirtkids)
