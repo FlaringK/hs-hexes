@@ -57,41 +57,41 @@ const cherubs = {
 
 }
 
-const charas = {
-  june: "0715cd",
-  rose: "b536da",
-  dave: "e00707",
-  jade: "4ac925",
+// const charas = {
+//   june: "0715cd",
+//   rose: "b536da",
+//   dave: "e00707",
+//   jade: "4ac925",
 
-  jane: "00d5f2",
-  jake: "1f9400",
-  roxy: "ff6ff2",
-  dirk: "f2a400",
+//   jane: "00d5f2",
+//   jake: "1f9400",
+//   roxy: "ff6ff2",
+//   dirk: "f2a400",
   
-  aradia: "a10000",
-  tavros: "a15000",
-  sollux: "a1a100",
-  karkat: "626262",
-  nepeta: "416600",
-  kanaya: "008141",
-  terezi: "008282",
-  vriska: "005682",
-  equius: "000056",
-  gamzee: "2b0057",
-  eridan: "6a006a",
-  feferi: "77003c",
+//   aradia: "a10000",
+//   tavros: "a15000",
+//   sollux: "a1a100",
+//   karkat: "626262",
+//   nepeta: "416600",
+//   kanaya: "008141",
+//   terezi: "008282",
+//   vriska: "005682",
+//   equius: "000056",
+//   gamzee: "2b0057",
+//   eridan: "6a006a",
+//   feferi: "77003c",
   
-  "alt-calliope": "ff0000",
-  calliope: "929292",
-  caliborn: "323232",
-  english: "2ed73a",
+//   "alt-calliope": "ff0000",
+//   calliope: "929292",
+//   caliborn: "323232",
+//   english: "2ed73a",
 
-  jaspersprite: "f141ef",
-  epiloguejane: "0097d7",
-  joey: "71daff",
-  jude: "d3ff8f",
+//   jaspersprite: "f141ef",
+//   epiloguejane: "0097d7",
+//   joey: "71daff",
+//   jude: "d3ff8f",
   
-}
+// }
 
 const spriteaspects = {
 
