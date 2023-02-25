@@ -6,7 +6,7 @@ const kids = {
 
   jane: "00d5f2",
   jake: "1f9400",
-  roxy: "f141ef",
+  roxy: "ff6ff2",
   dirk: "f2a400",
 }
 
