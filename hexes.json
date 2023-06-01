@@ -277,5 +277,19 @@
 			"eridan":"6a006a",
 			"feferi":"B11262"
 		}
+	},
+	"trickster":{
+		"name":"Trickster Mode Text Animation",
+		"col":2,
+		"colors":{
+			"red":"ffd1d1",
+			"orange":"ffe6d1",
+			"yellow":"fff6d1",
+			"green":"d1ffe3",
+			"cyan":"d1f9ff",
+			"blue":"d1dcff",
+			"purple":"f0d1ff",
+			"pesterlog background":"ff73fd"
+		}
 	}
 }
