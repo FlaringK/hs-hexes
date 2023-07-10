@@ -36,60 +36,60 @@ const copyColour = e => {
 const addColours = (title, id, col, colours) => {
   addTitle(title, id, col)
   for (const [key, value] of Object.entries(colours)) {
-    
-    const colour = value.toLowerCase()
 
-    const div = document.createElement("div")
-    div.style.color = "#" + getContrastYIQ(colour)
-    div.style.backgroundColor = "#" + colour
-    div.innerHTML = `<div class="clickthrough">${key}<br>#${colour}</div>`
-    div.dataset.hex = colour
-    div.dataset.name = key
-    div.dataset.nameCol = getContrastYIQ(colour)
+    if (Array.isArray(value)) {
 
-    div.onclick = copyColour
+      // Dual Colour
+      const symbol = document.createElement("div")
+      const background = document.createElement("div")
+      const backgroundCol = document.createElement("div")
+      
+      symbol.style.color = "#" + value[1]
+      symbol.style.backgroundColor = "#" + value[0]
+      background.style.color = "#" + value[0]
+      background.style.backgroundColor = "#" + value[1]
+  
+      symbol.onclick = copyColour
+      background.onclick = copyColour
+  
+      symbol.dataset.hex = value[0]
+      background.dataset.hex = value[1]
+      symbol.dataset.name = key + " symbol"
+      background.dataset.name = key + " background"
+      symbol.dataset.nameCol = value[1]
+      background.dataset.nameCol = value[0]
+  
+      symbol.innerHTML = `<div class="clickthrough">${key}<br>#${value[0].toLowerCase()}</div>`
+      backgroundCol.innerHTML = "#" + value[1].toLowerCase() 
+      backgroundCol.className = "clickthrough"
+  
+      symbol.className = "copy"
+      background.className = "copy"
+  
+      background.append(symbol)
+      background.append(backgroundCol)
+      col.append(background)
 
-    div.className = "copy"
+    } else {
 
-    col.append(div)
+      // Single colour
+      const colour = value.toLowerCase()
 
-  }
-}
+      const div = document.createElement("div")
+      div.style.color = "#" + getContrastYIQ(colour)
+      div.style.backgroundColor = "#" + colour
+      div.innerHTML = `<div class="clickthrough">${key}<br>#${colour}</div>`
+      div.dataset.hex = colour
+      div.dataset.name = key
+      div.dataset.nameCol = getContrastYIQ(colour)
+  
+      div.onclick = copyColour
+  
+      div.className = "copy"
+  
+      col.append(div)
 
-// Add colours to aspects div
-let addColorPairs = (title, id, col, colours) => {
-  addTitle(title, id, col)
-  for (const [key, value] of Object.entries(colours)) {
-    
-    const symbol = document.createElement("div")
-    const background = document.createElement("div")
-    const backgroundCol = document.createElement("div")
-    
-    symbol.style.color = "#" + value[1]
-    symbol.style.backgroundColor = "#" + value[0]
-    background.style.color = "#" + value[0]
-    background.style.backgroundColor = "#" + value[1]
-
-    symbol.onclick = copyColour
-    background.onclick = copyColour
-
-    symbol.dataset.hex = value[0]
-    background.dataset.hex = value[1]
-    symbol.dataset.name = key + " symbol"
-    background.dataset.name = key + " background"
-    symbol.dataset.nameCol = value[1]
-    background.dataset.nameCol = value[0]
-
-    symbol.innerHTML = `<div class="clickthrough">${key}<br>#${value[0].toLowerCase()}</div>`
-    backgroundCol.innerHTML = "#" + value[1].toLowerCase() 
-    backgroundCol.className = "clickthrough"
-
-    symbol.className = "copy"
-    background.className = "copy"
-
-    background.append(symbol)
-    background.append(backgroundCol)
-    col.append(background)
+    }
 
   }
 }
@@ -104,17 +104,13 @@ const getContrastYIQ = hexcolor => {
 }
 
 // Load colours
-fetch("hexes.json").then(response => response.json()).then(json => loadColours(json));
+fetch("./hexes.json").then(response => response.json()).then(json => loadColours(json));
 
 const loadColours = colorData => {
   console.log(colorData)
   for (const [key, value] of Object.entries(colorData)) {
 
-    if (Array.isArray(Object.values(value.colors)[0])) {
-      addColorPairs(value.name, key, cols[value.col - 1], value.colors)
-    } else {
-      addColours(value.name, key, cols[value.col - 1], value.colors)
-    }
+    addColours(value.name, key, cols[value.col - 1], value.colors)
 
   }
 }

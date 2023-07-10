@@ -13,6 +13,22 @@
 			"dirk":"f2a400"
 		}
 	},
+	"npcs":{
+		"name":"Homestuck Kids NPCs",
+		"col":1,
+		"colors":{
+			"jaspersprite": "f141ef",
+			"jasprose": [
+				"f141ef",
+				"b536da"
+			],
+			"davepeta": [
+				"4ac925",
+				"f2a400"
+			],
+			"fedorafreak": "4b4b4b"
+		}
+	},
 	"trolls":{
 		"name":"Homestuck Trolls Text",
 		"col":2,
@@ -29,6 +45,36 @@
 			"gamzee":"2b0057",
 			"eridan":"6a006a",
 			"feferi":"77003c"
+		}
+	},
+	"trollalts":{
+		"name":"Homestuck Trolls Alt Text",
+		"col":2,
+		"colors":{
+			"karkat red": "ff0000",
+			"aradiabot dreambubble": "000056",
+			"horuss (line 1) ministrife": "0022cb",
+			"equius / horuss(line 2) / aradiabot ministrife": "0022cf",
+			"gamzee scratch interlude": "4200b0",
+			"gamzee openbound 2": "6c00da",
+			"kurloz ministrife": "2b0057"
+		}
+	},
+	"cherubs":{
+		"name":"Cherubs + The Felt",
+		"col":1,
+		"colors":{
+			"calliope":"929292",
+			"caliborn":"323232",
+			"lord english / felt":"2ed73a",
+			"doc scratch":"ffffff",
+			"itchy / stitch":"ffea00",
+			"doze / sawbuck":"4040fd",
+			"trace / matchsticks":"df0000",
+			"clover / eggs":"a357ff",
+			"fin / biscuits":"ff6000",
+			"die / quarters":"008140",
+			"crowbar / cans":"950015"
 		}
 	},
   "spriteaspects":{
@@ -201,22 +247,6 @@
 			"caliginous":"000000"
 		}
 	},
-	"cherubs":{
-		"name":"Cherubs + The Felt",
-		"col":2,
-		"colors":{
-			"calliope":"929292",
-			"caliborn":"323232",
-			"felt / english":"2ed73a",
-			"itchy / stitch":"ffea00",
-			"doze / sawbuck":"4040fd",
-			"trace / matchsticks":"df0000",
-			"clover / eggs":"a357ff",
-			"fin / biscuits":"ff6000",
-			"die / quarters":"008140",
-			"crowbar / cans":"950015"
-		}
-	},
 	"moons":{
 		"name":"Moons (From the Extended Zodiac)",
 		"col":1,
@@ -247,12 +277,16 @@
 			"epilogue jane":"0097d7",
 			"harry anderson egbert":"0671cd",
 			"yiffy lalonde-harley":"D00009",
-			"tavros crocker":"2b0057"
+			"tavros crocker":"2b0057",
+			"ep. davepeta":[
+				"416600",
+				"f2a400"
+			]
 		}
 	},
 	"shirtkids":{
 		"name":"Homestuck Shirt Symbols",
-		"col":1,
+		"col":2,
 		"colors":{
 			"june":"38F43D",
 			"rose":"CB87F6",
