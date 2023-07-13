@@ -8,6 +8,7 @@ body {
   font-family: 'Courier New', Courier, monospace;
 
   background: linear-gradient(180deg, rgba(141,170,214,1) 0%, rgba(107,114,212,1) 100%);
+  background-color: rgba(141,170,214,1);
 }
 
 #main {
