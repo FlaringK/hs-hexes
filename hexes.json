@@ -52,12 +52,10 @@
 		"col":2,
 		"colors":{
 			"karkat red": "ff0000",
-			"aradiabot dreambubble": "000056",
-			"horuss (line 1) ministrife": "0022cb",
+			"horuss (line 1) _ministrife": "0022cb",
 			"equius / horuss(line 2) / aradiabot ministrife": "0022cf",
-			"gamzee scratch interlude": "4200b0",
-			"gamzee openbound 2 / kurloz": "6c00da",
-			"kurloz ministrife": "2b0057"
+			"gamzee scratch _interlude": "4200b0",
+			"gamzee openbound 2 / kurloz": "6c00da"
 		}
 	},
 	"cherubs":{
@@ -75,6 +73,34 @@
 			"fin / biscuits":"ff6000",
 			"die / quarters":"008140",
 			"crowbar / cans":"950015"
+		}
+	},
+	"shirtkids":{
+		"name":"Homestuck Shirt Symbols",
+		"col":2,
+		"colors":{
+			"june":"38F43D",
+			"rose":"CB87F6",
+			"dave":"FF0000",
+			"jade":"53A3FF",
+			"jane":"00D5F2",
+			"jake":"1F9400",
+			"roxy":"FF6FF2",
+			"dirk":"ff7607",
+
+      
+			"aradia":"a10000",
+			"tavros":"A25203",
+			"sollux":"a1a100",
+			"karkat":"626262",
+			"nepeta":"416600",
+			"kanaya":"078446",
+			"terezi":"008282",
+			"vriska":"004182",
+			"equius":"0021CB",
+			"gamzee":"440A7F",
+			"eridan":"6a006a",
+			"feferi":"B11262"
 		}
 	},
   "spriteaspects":{
@@ -207,9 +233,9 @@
 		"name":"Blood (From Hiveswap)",
 		"col":2,
 		"colors":{
-			"rustAct1":"bb0000",
+			"rust Act 1":"bb0000",
 			"rust":"f42123",
-			"bronzeAct1":"b25900",
+			"bronze Act 1":"b25900",
 			"bronze":"cd7f32",
 			"gold":"abab1a",
 			"olive":"71a020",
@@ -219,8 +245,40 @@
 			"indigo":"6464ff",
 			"purple":"a954ff",
 			"violet":"791a79",
-			"fuchsiaAct1":"6e003c",
+			"fuchsia Act 1":"6e003c",
 			"fuchsia":"d121c1"
+		}
+	},
+	"epilogue":{
+		"name":"Epilogue & HS^2",
+		"col":1,
+		"colors":{
+			"epilogue _karkat":"7c7e81",
+			"epilogue _eridan":"7e0048",
+			"epilogue _calliope":"a1a3a6",
+			"epilogue _caliborn":"009c68",
+			"epilogue _jane":"0097d7",
+			"epilogue davepeta":[
+				"416600",
+				"f2a400"
+			],
+			"harry anderson _egbert":"0671cd",
+			"tavros _crocker":"2b0057",
+			"yiffy _lalonde-harley":"D00009"
+		}
+	},
+	"moons":{
+		"name":"Moons (From the Extended Zodiac)",
+		"col":1,
+		"colors":{
+			"prospit": [
+				"ffff01",
+				"e49700"
+			],
+			"derse": [
+				"ff01fe",
+				"9700e4"
+			]
 		}
 	},
 	"horns":{
@@ -228,11 +286,11 @@
 		"col":1,
 		"colors":{
 			"skin":"C4C4C4",
-			"eyes/horns1":"FFBA29",
-			"horns2":"FF9000",
-			"horns3":"FF4200",
-			"eyebags1":"9D9D9D",
-			"eyebags2":"B2B2B2",
+			"eyes / horn tip":"FFBA29",
+			"horn mid":"FF9000",
+			"horn base":"FF4200",
+			"eyebags 1":"9D9D9D",
+			"eyebags 2":"B2B2B2",
 			"hair":"000000",
 			"limeblood":"658200"
 		}
@@ -247,16 +305,6 @@
 			"caliginous":"000000"
 		}
 	},
-	"moons":{
-		"name":"Moons (From the Extended Zodiac)",
-		"col":1,
-		"colors":{
-			"prospit symbol":"ffff01",
-			"prospit":"e49700",
-			"derse symbol":"ff01fe",
-			"derse":"9700e4"
-		}
-	},
 	"sburb":{
 		"name":"Sburb Versions",
 		"col":1,
@@ -266,55 +314,9 @@
 			"sgrub":"900fff"
 		}
 	},
-	"epilogue":{
-		"name":"Epilogue & HS^2",
-		"col":2,
-		"colors":{
-			"epilogue karkat":"7c7e81",
-			"epilogue eridan":"7e0048",
-			"epilogue calliope":"a1a3a6",
-			"epilogue caliborn":"009c68",
-			"epilogue jane":"0097d7",
-			"harry anderson egbert":"0671cd",
-			"yiffy lalonde-harley":"D00009",
-			"tavros crocker":"2b0057",
-			"ep. davepeta":[
-				"416600",
-				"f2a400"
-			]
-		}
-	},
-	"shirtkids":{
-		"name":"Homestuck Shirt Symbols",
-		"col":2,
-		"colors":{
-			"june":"38F43D",
-			"rose":"CB87F6",
-			"dave":"FF0000",
-			"jade":"53A3FF",
-			"jane":"00D5F2",
-			"jake":"1F9400",
-			"roxy":"FF6FF2",
-			"dirk":"ff7607",
-
-      
-			"aradia":"a10000",
-			"tavros":"A25203",
-			"sollux":"a1a100",
-			"karkat":"626262",
-			"nepeta":"416600",
-			"kanaya":"078446",
-			"terezi":"008282",
-			"vriska":"004182",
-			"equius":"0021CB",
-			"gamzee":"440A7F",
-			"eridan":"6a006a",
-			"feferi":"B11262"
-		}
-	},
 	"trickster":{
 		"name":"Trickster Mode Text Animation",
-		"col":2,
+		"col":1,
 		"colors":{
 			"red":"ffd1d1",
 			"orange":"ffe6d1",
@@ -323,7 +325,82 @@
 			"cyan":"d1f9ff",
 			"blue":"d1dcff",
 			"purple":"f0d1ff",
-			"pesterlog background":"ff73fd"
+			"pesterlog _background":"ff73fd"
+		}
+	},
+	"strife":{
+		"name":"Strife deck",
+		"col":2,
+		"colors":{
+			"raised back": "0e6037",
+			"main plate": "008c45",
+			"raised plate": "00e371",
+			"accent": "00c661"
+		}
+	},
+	"sylladex":{
+		"name":"Sylladex Modi (Main)",
+		"col":2,
+		"min-width": "155px",
+		"colors":{
+			"filo main": "ff067c",
+			"filo back": "9a2446",
+			"filo text": "b7fffd",
+			"fifo main": "ff6000",
+			"fifo back": "cf560c",
+			"fifo text": "00f5a1",
+			"array main": "06b6ff",
+			"array back": "1193d6",
+			"array text": "ff9caa",
+			"tree main": "96ff00",
+			"tree back": "7ca619",
+			"tree text": "f86659",
+			"hash main": "fff000",
+			"hash back": "e3cb00",
+			"hash text": "9553ff",
+			"memory main": "b949ff",
+			"memory back": "9c29e4",
+			"memory text": "ffffff",
+			"modus card front": "a2a2a2",
+			"modus card shadow": "bebebe"
+		}
+	},
+	"sillydex":{
+		"name":"Sylladex Modi (Silly)",
+		"col": 2,
+		"colors":{
+			"jenga _main": "040099",
+			"jenga _back": "6764c8",
+			"pictionary _main": "4f8b0a",
+			"pictionary _back": "234000",
+			"ouija _main": "e6d4a4",
+			"ouija _back": "5b4f3d",
+			"wallet _main": "8a5520",
+			"wallet _back": "673218",
+			"recipe _main": "ff0000",
+			"recipe _back": "c50000",
+			"puzzle _main": "003fd4",
+			"puzzle _back": "092955",
+			"tech-hop _main 1": "272727",
+			"tech-hop _main 2": "ff7b03",
+			"tech-hop _main 3": "8d8d8d",
+			"tech-hop _back": "000000",
+			"encryption _main": "4b4b4b",
+			"encryption _back": "000000",
+			"chastity _main": "868686",
+			"chastity _back": "585858",
+			"scratch & sniff _main 1": "fb00ff",
+			"scratch & sniff _main 2": "ae00ff",
+			"scratch & sniff _main 3": "0182ab",
+			"scratch & sniff _main 4": "7a1fff",
+			"scratch & sniff _back 1": "4800e4",
+			"scratch & sniff _back 2": "5900e4",
+			"eight ball _front": "0f04fa",
+			"eight ball _main": "000000",
+			"juju _main 1": "fd0000",
+			"juju _main 2": "c80000",
+			"juju _main 3": "18e700",
+			"juju _main 4": "00d515"
 		}
 	}
 }

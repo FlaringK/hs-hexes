@@ -5,10 +5,10 @@ const hash = document.getElementById("hash")
 const menu = document.getElementById("toc")
 
 const addTitle = (title, id, col) => {
-  const h2 = document.createElement("h2")
-  h2.innerText = title
-  h2.id = id
-  col.append(h2)
+  // const h2 = document.createElement("h2")
+  // h2.innerText = title
+  // h2.id = id
+  // col.append(h2)
 
   const a = document.createElement("a")
   a.innerText = title
@@ -18,6 +18,12 @@ const addTitle = (title, id, col) => {
   
   li.appendChild(a)
   menu.append(li)
+}
+
+const toggleAllDetails = state => {
+  document.body.querySelectorAll('#colors details').forEach((e) => {
+    (state) ? e.setAttribute('open', state) : e.removeAttribute('open')
+  })
 }
 
 const copyColour = e => {
@@ -33,8 +39,23 @@ const copyColour = e => {
   notif.className = "hide"
 }
 
-const addColours = (title, id, col, colours) => {
+const addColours = (data, id, col) => {
+  const title = data.name
+  const colours = data.colors
+
   addTitle(title, id, col)
+
+  const details = document.createElement("details")
+  const summary = document.createElement("summary")
+
+  details.id = id
+  summary.innerHTML = title
+
+  details.append(summary)
+
+  const wrap = document.createElement("div")
+  wrap.className = "sectionWrap"
+
   for (const [key, value] of Object.entries(colours)) {
 
     if (Array.isArray(value)) {
@@ -63,12 +84,12 @@ const addColours = (title, id, col, colours) => {
       backgroundCol.innerHTML = "#" + value[1].toLowerCase() 
       backgroundCol.className = "clickthrough"
   
-      symbol.className = "copy"
+      symbol.className = "copyinner"
       background.className = "copy"
   
       background.append(symbol)
       background.append(backgroundCol)
-      col.append(background)
+      wrap.append(background)
 
     } else {
 
@@ -78,20 +99,27 @@ const addColours = (title, id, col, colours) => {
       const div = document.createElement("div")
       div.style.color = "#" + getContrastYIQ(colour)
       div.style.backgroundColor = "#" + colour
-      div.innerHTML = `<div class="clickthrough">${key}<br>#${colour}</div>`
+      div.innerHTML = `<div class="clickthrough">${key.replace(/_/g, "<br>").replace(/\//g, "<br>&")}<br>#${colour}</div>`
       div.dataset.hex = colour
-      div.dataset.name = key
+      div.dataset.name = key.replace(/_/g, "")
       div.dataset.nameCol = getContrastYIQ(colour)
+
+      if ("min-width" in data) {
+        div.style.minWidth = data["min-width"]
+      }
   
       div.onclick = copyColour
   
       div.className = "copy"
   
-      col.append(div)
+      wrap.append(div)
 
     }
 
   }
+
+  details.append(wrap)
+  col.append(details)
 }
 
 // https://stackoverflow.com/questions/11867545/change-text-color-based-on-brightness-of-the-covered-background-area
@@ -110,7 +138,9 @@ const loadColours = colorData => {
   console.log(colorData)
   for (const [key, value] of Object.entries(colorData)) {
 
-    addColours(value.name, key, cols[value.col - 1], value.colors)
+    addColours(value, key, cols[value.col - 1])
 
   }
+
+  toggleAllDetails(true)
 }

@@ -24,11 +24,24 @@
         For pallets based on sprites <a href="https://forum.homestuck.xyz/viewtopic.php?f=7&t=598">go here.</a> <br>
         Just click the squares to copy the colour to your clipboard.
       </div>
-      <div id="options"><label for="hash" style="font-weight: 600;"">Include Hashtag in copy</label> <input type="checkbox" name="hash" id="hash"></div>
+
+      <hr>
+
+      <div id="options">
+        <button onclick="toggleAllDetails(true )">Open all colours</button>
+        <button onclick="toggleAllDetails(false)">Close all colours</button>
+      </div>
+      <div id="options">
+        <label for="hash" style="font-weight: 600;"">Include Hashtag in copy</label> 
+        <input type="checkbox" name="hash" id="hash">
+      </div>
     </div>
 
     <div id="menu">
-      <ul id="toc"></ul>
+      <details>
+        <summary>Table of contents</summary>
+        <ul id="toc"></ul>
+      </details>
     </div>
 
     <div id="colors">
@@ -42,6 +55,24 @@
   <div id="notif"></div>
 
   <script src="./colours.js"></script>
+
+  
+  <!-- "boggle _main": "26deff",
+  "boggle _back": "2673ff",
+  "monopoly _main": "bdebcf",
+  "monopoly _back": "63c088",
+  "yahtzee _main": "b80e0e",
+  "yahtzee _back": "8d0404",
+  "clue _main": "8b541f",
+  "clue _back": "63370c",
+  "connect _four _main": "f6ff00",
+  "connect _four _back": "0006ff",
+  "battleship _main": "1ad6d0",
+  "battleship _back": "000000",
+  "guess _who _main": "ff5400",
+  "guess _who _back": "ffea00",
+  "operation _main": "ffabeb",
+  "operation _back": "ff0000" -->
 
 </body>
 </html>
