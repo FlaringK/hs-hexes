@@ -75,6 +75,24 @@
 			"crowbar / cans":"950015"
 		}
 	},
+	"epilogue":{
+		"name":"Epilogue & HS^2",
+		"col":1,
+		"colors":{
+			"epilogue _karkat":"7c7e81",
+			"epilogue _eridan":"7e0048",
+			"epilogue _calliope":"a1a3a6",
+			"epilogue _caliborn":"009c68",
+			"epilogue _jane":"0097d7",
+			"epilogue _davepeta":[
+				"416600",
+				"f2a400"
+			],
+			"harry anderson _egbert":"0671cd",
+			"tavros _crocker":"2b0057",
+			"yiffy _lalonde-harley":"D00009"
+		}
+	},
 	"shirtkids":{
 		"name":"Homestuck Shirt Symbols",
 		"col":2,
@@ -247,24 +265,6 @@
 			"violet":"791a79",
 			"fuchsia Act 1":"6e003c",
 			"fuchsia":"d121c1"
-		}
-	},
-	"epilogue":{
-		"name":"Epilogue & HS^2",
-		"col":1,
-		"colors":{
-			"epilogue _karkat":"7c7e81",
-			"epilogue _eridan":"7e0048",
-			"epilogue _calliope":"a1a3a6",
-			"epilogue _caliborn":"009c68",
-			"epilogue _jane":"0097d7",
-			"epilogue davepeta":[
-				"416600",
-				"f2a400"
-			],
-			"harry anderson _egbert":"0671cd",
-			"tavros _crocker":"2b0057",
-			"yiffy _lalonde-harley":"D00009"
 		}
 	},
 	"moons":{

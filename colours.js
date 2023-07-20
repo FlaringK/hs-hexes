@@ -75,12 +75,12 @@ const addColours = (data, id, col) => {
   
       symbol.dataset.hex = value[0]
       background.dataset.hex = value[1]
-      symbol.dataset.name = key + " symbol"
-      background.dataset.name = key + " background"
+      symbol.dataset.name = key.replace(/_/g, "") + " symbol"
+      background.dataset.name = key.replace(/_/g, "") + " background"
       symbol.dataset.nameCol = value[1]
       background.dataset.nameCol = value[0]
   
-      symbol.innerHTML = `<div class="clickthrough">${key}<br>#${value[0].toLowerCase()}</div>`
+      symbol.innerHTML = `<div class="clickthrough">${key.replace(/_/g, "<br>")}<br>#${value[0].toLowerCase()}</div>`
       backgroundCol.innerHTML = "#" + value[1].toLowerCase() 
       backgroundCol.className = "clickthrough"
   
