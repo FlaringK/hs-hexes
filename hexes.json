@@ -341,7 +341,7 @@
 	"sylladex":{
 		"name":"Sylladex Modi (Main)",
 		"col":2,
-		"min-width": "155px",
+		"min-width": "30%",
 		"colors":{
 			"filo main": "ff067c",
 			"filo back": "9a2446",
