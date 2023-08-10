@@ -268,16 +268,24 @@
 		}
 	},
 	"moons":{
-		"name":"Moons (From the Extended Zodiac)",
+		"name":"Moons",
 		"col":1,
 		"colors":{
-			"prospit": [
+			"prospit _(TEZ)": [
 				"ffff01",
 				"e49700"
 			],
-			"derse": [
+			"prospit _(Sprite)": [
+				"ffff00",
+				"ffe134"
+			],
+			"derse _(TEZ)": [
 				"ff01fe",
 				"9700e4"
+			],
+			"derse _(Sprite)": [
+				"f191ff",
+				"e000ff"
 			]
 		}
 	},
