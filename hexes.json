@@ -464,5 +464,16 @@
 			"rage _shade _outline": "7E42B3",
 			"rage _accent": "5F2B8C"
 		}
+	},
+	"psycho":{
+		"name":"Psycholonials",
+		"col":2,
+		"colors":{
+			"zhen": "b35fe9",
+			"abby": "6aa6ef",
+			"joculine": "ff3037",
+			"mizzlebip": "ff7aea",
+			"riotus": "0da13e"
+		}
 	}
 }
